@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- ZMIEŃ: tytuł widoczny na karcie przeglądarki -->
-  <title>Kosmiczna Przystań – nocne obserwacje nieba</title>
+
+  <!-- ZMIEŃ: tytuł karty przeglądarki -->
+  <title>Moja pasja: fotografia</title>
+
   <style>
-    /* ===== KOLORY – zmień je, aby strona była „Twoja” ===== */
+    /* KOLORY STRONY */
     :root {
-      --tlo: #0b1026;        /* tło strony */
-      --karta: #1a2140;      /* tło sekcji */
-      --akcent: #facc15;     /* kolor wyróżnień i przycisku */
-      --tekst: #e2e8f0;      /* kolor tekstu */
+      --tlo: #fdf2f8;
+      --karta: #ffffff;
+      --akcent: #f472b6;
+      --tekst: #333333;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -27,12 +31,20 @@
     header {
       text-align: center;
       padding: 60px 20px 40px;
-      background: linear-gradient(135deg, #312e81, #7c3aed);
+      background: linear-gradient(135deg, #7c3aed, #db2777);
       color: white;
     }
 
-    header h1 { margin: 0 0 10px; font-size: 2.4rem; }
-    header p  { margin: 0; font-size: 1.2rem; opacity: 0.9; }
+    header h1 {
+      margin: 0 0 10px;
+      font-size: 2.4rem;
+    }
+
+    header p {
+      margin: 0;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
 
     main {
       max-width: 800px;
@@ -45,71 +57,106 @@
       border-radius: 14px;
       padding: 20px 28px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
     }
 
-    h2 { color: var(--akcent); margin-top: 0; }
+    h2 {
+      color: var(--akcent);
+      margin-top: 0;
+    }
 
-    ul li { margin-bottom: 6px; }
+    ul li {
+      margin-bottom: 6px;
+    }
 
     .przycisk {
       display: inline-block;
       background: var(--akcent);
-      color: #0b1026;
+      color: white;
       padding: 12px 26px;
       border-radius: 30px;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .przycisk:hover { opacity: 0.85; }
+    .przycisk:hover {
+      opacity: 0.85;
+    }
 
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
+      color: var(--tekst);
       opacity: 0.7;
     }
   </style>
 </head>
+
 <body>
 
   <header>
-    <!-- ZMIEŃ: nazwa Twojej strony lub wymyślonej firmy -->
-    <h1>Kosmiczna Przystań</h1>
-    <p>Wymyślona firma, która organizuje nocne obserwacje nieba</p>
+    <!-- Nazwa strony -->
+    <h1>Foto Natura</h1>
+    <p>Zdjęcia przyrody i miasta</p>
   </header>
 
   <main>
     <section>
-      <h2>O firmie</h2>
-      <!-- ZMIEŃ: opisz swoją firmę lub zainteresowania w 2–3 zdaniach. Nie podawaj żadnych danych osobowych! -->
-      <p>Kosmiczna Przystań to miejsce dla wszystkich, którzy lubią patrzeć w gwiazdy.
-         Zabieramy teleskopy tam, gdzie niebo jest najciemniejsze, i pokazujemy planety, Księżyc oraz odległe galaktyki.</p>
-      <p>Ta strona powstała na lekcji informatyki i została opublikowana za darmo w GitHub Pages.</p>
+      <h2>O mnie i mojej pasji</h2>
+
+      <!-- Opis zainteresowań -->
+      <p>
+        Fotografia to moja pasja, dzięki której mogę zatrzymywać
+        wyjątkowe chwile i pokazywać piękno otaczającego nas świata.
+        Najbardziej lubię fotografować przyrodę, krajobrazy
+        oraz ciekawe miejsca w mieście.
+      </p>
+
+      <p>
+        Każde zdjęcie opowiada własną historię. Staram się dostrzegać
+        niezwykłe szczegóły w codziennym życiu i uwieczniać je na fotografiach.
+      </p>
     </section>
 
     <section>
-      <h2>Co oferujemy</h2>
-      <!-- ZMIEŃ: wpisz własne zainteresowania lub usługi firmy -->
+      <h2>Co lubię fotografować?</h2>
+
+      <!-- Lista zainteresowań -->
       <ul>
-        <li>Nocne pokazy nieba przez teleskop</li>
-        <li>Warsztaty fotografii gwiazd dla początkujących</li>
-        <li>Mapy nieba i kalendarz zjawisk astronomicznych</li>
+        <li>Piękne krajobrazy i zachody słońca</li>
+        <li>Kwiaty, drzewa i dziką przyrodę</li>
+        <li>Uliczki, budynki i zabytki miast</li>
+        <li>Zwierzęta w ich naturalnym środowisku</li>
+        <li>Ciekawe chwile uchwycone na zdjęciach</li>
       </ul>
     </section>
 
     <section>
       <h2>Zobacz więcej</h2>
-      <p>Chcesz dowiedzieć się, jak działa hosting, z którego korzysta ta strona?</p>
-      <!-- ZMIEŃ (opcjonalnie): adres, do którego prowadzi przycisk -->
-      <a class="przycisk" href="https://pages.github.com/" target="_blank" rel="noopener">Poznaj GitHub Pages</a>
+
+      <p>
+        Chcesz odkryć więcej inspirujących fotografii?
+        Zobacz zdjęcia wykonane przez innych pasjonatów fotografii.
+      </p>
+
+      <!-- Link do strony z fotografiami -->
+      <a
+        class="przycisk"
+        href="https://unsplash.com/"
+        target="_blank"
+        rel="noopener"
+      >
+        Odkryj świat fotografii
+      </a>
     </section>
   </main>
 
   <footer>
-    <!-- ZMIEŃ: rok i nazwa strony (bez danych osobowych) -->
-    © 2026 Kosmiczna Przystań · Strona wykonana na lekcji informatyki
+    <!-- Stopka strony -->
+    © 2026 Foto Natura · Moja pasja: fotografia
   </footer>
 
 </body>
 </html>
+
